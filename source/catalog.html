@@ -5,15 +5,26 @@
     <title>HTML Academy: Кэт энерджи</title>
   </head>
   <body>
-    <header>
-      <img src="#" alt="">
-      <h1>Cat energy</h1>
-      <nav>
-        <ul>
-          <li><a href="index.html">Главная</a></li>
-          <li><a href="catalog.html">Каталог продукции</a></li>
-          <li><a href="form.html">Подбор программы</a></li>
-        </ul>
+    <header class="page-header">
+      <a href="#" class="page-header__logo">
+        <img class="page-header__logo-image" src="#" alt="">
+        <h1>Cat energy</h1>
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item ">
+              <a href="index.html">Главная</a>
+            </li>
+            <li class="site-list__item site-list__item--active">
+              <a href="catalog.html">Каталог продукции</a>
+            </li>
+            <li class="site-list__item">
+              <a href="form.html">Подбор программы</a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </header>
     <main>
@@ -201,30 +212,36 @@
           </table>
           <button>Заказать</button>
         </div>
-        <div>
+      </section>
+      <div>
           <img src="#" alt="">
           <p>Закажите все и получите чехол для кота в подарок</p>
-        </div>
-      </section>
-    </main>
-    <footer>
-      <div>
-        <p>Приглашаем к сотрудничеству дилеров!</p>
-        <address>ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
-        <img src="#" alt="">
       </div>
-      <div>
-        <a href="#">Cat Energy</a>
-        <div>
-          <ul>
-            <li><a href="#">Vkontakte</a></li>
-            <li><a href="#">Instagram</a></li>
-            <li><a href="#">Facebook</a></li>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <div class="page-footer__contacts contacts">
+          <p class="contacts__text">Приглашаем к сотрудничеству дилеров!</p>
+          <address class="contacts__adress">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+          <img class="contacts__map" src="#" alt="">
+        </div>
+        <div class="page-footer__social social">
+          <a href="#" class="social__title">Cat Energy</a>
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link--vkontakte" href="#">Vkontakte</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link--instagram" href="#">Instagram</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link--facebook" href="#">Facebook</a>
+            </li>
           </ul>
         </div>
-        <div>
-          <p>HTML Academy</p>
-          <a href="#"></a>
+        <div class="page-footer__copyright copyright">
+          <p class="copyright__text">HTML Academy</p>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"></a>
         </div>
       </div>
     </footer>
