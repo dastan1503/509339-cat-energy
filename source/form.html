@@ -6,8 +6,6 @@
   </head>
   <body>
     <header>
-      <a href="#">
-        <im<header class="page-header">
       <a href="#" class="page-header__logo">
         <img class="page-header__logo-image" src="#" alt="">
         <h1>Cat energy</h1>
@@ -29,69 +27,69 @@
         </div>
       </nav>
     </header>
-    <main>
-      <h2>Подбор программы</h2>
-      <p>Заполните анкету и мы подберем программу питания для вашего кота</p>
-      <form method="post" name="program" action="https://echo.htmlacademy.ru/">
-        <div>
-          <label>Имя:*
-            <input type="text" name="name" placeholder="Барсик" required>
+    <main class="form">
+      <h2 class="form__title">Подбор программы</h2>
+      <p class="form__description">Заполните анкету и мы подберем программу питания для вашего кота</p>
+      <form class="form__program form-work" method="post" name="program" action="https://echo.htmlacademy.ru/">
+        <div class="form-work__base-info">
+          <label class="form-work__label">Имя:*
+            <input class="form-work__name" type="text" name="name" placeholder="Барсик" required>
           </label>
-          <label>Вес (кг):*
-            <input type="number" name="weight" placeholder="1" required>
+          <label class="form-work__label">Вес (кг):*
+            <input class="form-work__weight" type="number" name="weight" placeholder="1" required>
           </label>
-          <label>Возраст (лет):
-            <input type="number" name="age" placeholder="1">
+          <label class="form-work__label">Возраст (лет):
+            <input class="form-work__age" type="number" name="age" placeholder="1">
           </label>
-          <div>
-            <label>
-              <input type="radio" name="mission" value="weight-" checked>
+          <div class="form-work__mission mission">
+            <label class="form-work__label">
+              <input class="form-work__radio" type="radio" name="mission" value="weight-" checked>
               Похудение
             </label>
-            <label>
-              <input type="radio" name="mission" value="weight+">
+            <label class="form-work__label">
+              <input class="form-work__radio" type="radio" name="mission" value="weight+">
               Набор массы
             </label>
-            <label>
-              <input type="radio" name="mission" value="i-dont-know">
+            <label class="form-work__label">
+              <input class="form-work__radio" type="radio" name="mission" value="dont-know">
               Не знаю (нужен ваш совет)
             </label>
           </div>
         </div>
-        <div>
-          <h2>Контактные данные (владельца кота)</h2>
-          <label>E-mail:*
+        <div class="form-work__contacts">
+          <h2 class="form-work__header">Контактные данные (владельца кота)</h2>
+          <label class="form-work__label">E-mail:*
               <input type="email" name="email" placeholder="kuklachev@gmail.com" required>
           </label>
-          <label>Телефон:*
+          <label class="form-work__label">Телефон:*
               <input type="tel" name="tel" placeholder="8 (960) 900-600-90" required>
           </label>
         </div>
         <div>
-          <h2>Комментарий</h2>
-          <textarea name="description">Расскажите обо всех повадках кота</textarea>
+          <h2 class="form-work__header">Комментарий</h2>
+          <textarea class="form-work__textarea" name="description">Расскажите обо всех повадках кота</textarea>
         </div>
         <div>
-          <h2>Дополнительно</h2>
-          <label>
-            <input type="checkbox" name="extra" value="sweetener" checked>
+          <h2 class="form-work__header">Дополнительно</h2>
+          <label class="form-work__label">
+            <input class="form-work__checkbox" type="checkbox" name="extra" value="sweetener" checked>
             Сахарозаменитель
           </label>
-          <label>
-            <input type="checkbox" name="extra" value="water">
+          <label class="form-work__label">
+            <input class="form-work__checkbox" type="checkbox" name="extra" value="water">
             Питьевая вода
           </label>
-          <label>
-            <input type="checkbox" name="extra" value="milk">
+          <label class="form-work__label">
+            <input class="form-work__checkbox" type="checkbox" name="extra" value="milk">
             Молоко
           </label>
-          <label>
-            <input type="checkbox" name="extra" value="vitamins">
+          <label class="form-work__label">
+            <input class="form-work__checkbox" type="checkbox" name="extra" value="vitamins">
             Витамины
           </label>
         </div>
-        <button type="submit">Отправить заявку</button>
-        <p>*-Обязательные поля</p>
+        <button class="form-work__submit green-button" type="submit">Отправить заявку</button>
+        <p class="form-work__required-text">*-Обязательные поля</p>
       </form>
     </main>
     <footer class="page-footer">
