@@ -1,29 +1,49 @@
-@font-face {
-  font-weight: normal;
-  font-family: "Oswald";
-  src: url("../fonts/oswaldregular.woff2") format("woff2"), url("fonts/oswaldregular.woff") format("woff");
+@media (min-width: @min-width){
+  @font-face {
+    font-weight: normal;
+    font-family: "Oswald";
+    src: url("../fonts/oswaldregular.woff2") format("woff2"), url("fonts/oswaldregular.woff") format("woff");
+  }
+
+  @font-face {
+    font-weight: bold;
+    font-family: "Oswald";
+    src: url("../fonts/oswaldmedium.woff2") format("woff2"), url("fonts/oswaldmedium.woff") format("woff");
+  }
+
+  body {
+    width: @min-width;
+    margin: 0 auto;
+    padding: 0;
+    font-size: 18px;
+    line-height: 18px;
+    font-family: "Oswald", "Cuprum", sans-serif;
+    color: #444444;
+    font-weight: normal;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .button--green{
+    .green-button();
+  }
+
 }
 
-@font-face {
-  font-weight: bold;
-  font-family: "Oswald";
-  src: url("../fonts/oswaldmedium.woff2") format("woff2"), url("fonts/oswaldmedium.woff") format("woff");
+@media (min-width: @tablet-width){
+  body {
+    width: @tablet-width;
+  }
 }
 
-body {
-  min-width: 320px;
-  margin: 0;
-  padding: 0;
-
-  font-size: 18px;
-  line-height: 18px;
-  font-family: "Oswald", "Cuprum", sans-serif;
-  color: #444444;
-  font-weight: normal;
-  background-color: #ffffff;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
+@media (min-width: @desktop-width){
+  body {
+    width: @desktop-width;
+  }
 }
