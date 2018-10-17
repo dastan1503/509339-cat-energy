@@ -1,3 +1,30 @@
 @media (min-width: @min-width) {
-  color: black;
+  .promo {
+    color: #ffffff;
+
+    &__title {
+      font-size: 36px;
+      line-height: 36px;
+    }
+
+    &__text {
+      font-size: 14px;
+      text-transform: uppercase;
+    }
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .promo {
+    color: #111111;
+
+    &__title {
+      font-size: 60px;
+      line-height: 60px;
+    }
+
+    &__text {
+      font-size: 20px;
+    }
+  }
 }

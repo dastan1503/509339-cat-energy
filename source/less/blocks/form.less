@@ -1,11 +1,68 @@
 @media (min-width: @min-width) {
-  color: #111111;
+  .form__title {
+    color: #111111;
+    font-size: 36px;
+  }
+
+  .form__description {
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 18px;
+    color: #111111;
+  }
+
+  .form-work label {
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #222222;
+  }
+
+  .form-work input::placeholder,
+  .form-work textarea,
+  .form-work input {
+    font-size: 16px;
+    color: #444444;
+    text-transform: uppercase;
+  }
+
+  .form-work__header {
+    font-size: 24px;
+    line-height: 24px;
+    color: #111111;
+  }
+
+  .form-work__required-text {
+    font-family: "Arial", sans-serif;
+    color: #444444;
+    font-size: 14px;
+  }
 }
 
 @media (min-width: @tablet-width) {
-  color: #111111;
-}
+  .form__title {
+    font-size: 60px;
+  }
 
-@media (min-width: @desktop-width) {
-  color: #111111;
+  .form__description {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .form-work label {
+    font-size: 20px;
+  }
+
+  .form-work input::placeholder,
+  .form-work textarea,
+  .form-work input {
+    font-size: 20px;
+  }
+
+  .form-work__header {
+    font-size: 36px;
+  }
+
+  .form-work__required-text {
+    font-size: 16px;
+  }
 }
