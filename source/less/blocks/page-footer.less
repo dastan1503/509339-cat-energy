@@ -1,4 +1,17 @@
 @media (min-width: @min-width) {
+  .page-footer {
+    background-color: #f2f2f2;
+
+    & div {
+      border-bottom: 1px solid #d9d9d9;
+    }
+
+    &__logo {
+      opacity: 1;
+      background-image: url("../img/logo-footer.svg");
+    }
+  }
+
   .page-footer__description {
     color: #111111;
     font-size: 16px;
@@ -27,5 +40,9 @@
 
   .page-footer__adress {
     font-size: 16px;
+  }
+
+  .page-footer div {
+    border: none;
   }
 }
