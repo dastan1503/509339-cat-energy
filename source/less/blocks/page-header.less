@@ -22,6 +22,7 @@
   .page-header__list {
     list-style-type: none;
     display: flex;
+    justify-content: flex-end;
     flex-direction: row;
     flex-wrap: wrap;
     margin: 0;
@@ -55,10 +56,12 @@
     flex-direction: row;
     justify-content: space-between;
     margin: 22px 0;
+    padding: 0 30px;
   }
 
   .page-header__logo {
     background-image: url("../img/logo-tablet.svg");
+    background-size: 173px 60px;
     border: none;
   }
 
@@ -72,7 +75,7 @@
     padding: 0 15px;
   }
 
-  .page-header__item--active a {
+  .page-header__item--active {
     min-height: 40px;
     border-bottom: 2px solid @bg-green;
   }
@@ -80,23 +83,27 @@
 
 @media (min-width: @desktop-width) {
   .page-header {
-    padding: 0 110px;
+    padding: 0 40px;
+    margin: 54px 0;
   }
 
   .page-header__logo {
     background-image: url("../img/logo-desktop.svg");
+    background-size: 201px 60px;
+    width: 210px;
+  }
+
+  .page-header__nav--white a {
+    color: #ffffff;
   }
 
   .page-header__nav {
-    &--white {
-      background-color: @bg-green;
-    }
-
-    &--white a {
-      color: #ffffff;
-      border-bottom: 2px solid #ffffff;
-    }
     width: 50%;
+  }
+
+  .page-header__nav--white .page-header__item--active {
+    min-height: 40px;
+    border-bottom: 2px solid #ffffff;
   }
 
   .page-header__item a {

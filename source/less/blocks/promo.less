@@ -80,14 +80,28 @@
 }
 
 @media (min-width: @desktop-width) {
+  .promo {
+    min-height: 550px;
+    width: 1060px;
+    padding-top: 20px;
+  }
+
   .promo::before {
     content: "";
-    width: 320px;
-    height: 305px;
+    width: 720px;
+    height: 696px;
     position: absolute;
-    left: 0;
-    top: 0;
+    left: 650px;
+    top: -175px;
     background: @bg-green url("../img/index-background-desktop@1x.jpg") center top 100% no-repeat;
+    z-index: -1;
+  }
+
+  .promo__img {
+    top: -30px;
+    left: 490px;
+    width: 552px;
+    height: 499px;
     z-index: -1;
   }
 }
