@@ -40,7 +40,18 @@
 
 @media (min-width: @tablet-width) {
   .promo {
+    min-height: 820px;
     color: #111111;
+    padding: 0 120px;
+  }
+
+  .promo__img {
+    position: absolute;
+    top: 230px;
+    left: 30px;
+    width: 709px;
+    height: 609px;
+    z-index: -1;
   }
 
   .promo::before {
@@ -48,12 +59,23 @@
   }
 
   .promo__title {
+    text-align: left;
     font-size: 60px;
     line-height: 60px;
+    width: 430px;
   }
 
   .promo__text {
+    margin: 45px 0;
+    text-align: left;
     font-size: 20px;
+  }
+
+  .promo__button {
+    margin-top: 3px;
+    font-size: 20px;
+    width: 245px;
+    min-height: 52px;
   }
 }
 
