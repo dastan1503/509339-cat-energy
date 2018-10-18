@@ -82,24 +82,24 @@
 @media (min-width: @desktop-width) {
   .page-header {
     padding: 0 110px;
+  }
 
-    &__logo {
-      background-image: url("../img/logo-desktop.svg");
-    }
+  .page-header__logo {
+    background-image: url("../img/logo-desktop.svg");
+  }
 
-    &__nav {
-      &--white {
-        & a {
-          color: #ffffff;
-          border-bottom: 2px solid #ffffff;
-        }
-        background-color: @bg-green;
+  .page-header__nav {
+    &--white {
+      & a {
+        color: #ffffff;
+        border-bottom: 2px solid #ffffff;
       }
-      width: 50%;
+      background-color: @bg-green;
     }
+    width: 50%;
+  }
 
-    &__item a {
-      text-decoration: none;
-    }
+  .page-header__item a {
+    text-decoration: none;
   }
 }
