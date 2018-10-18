@@ -1,8 +1,11 @@
 @media (min-width: @min-width) {
   .programs__wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     background-color: #f2f2f2;
     width: 280px;
-    margin: 0 auto;
+    margin: 20px 20px;
   }
 
   .programs__title {
@@ -20,6 +23,16 @@
   .programs__link {
     font-size: 16px;
   }
+
+  .programs__img--slim {
+    width: 35px;
+    height: 49px;
+  }
+
+  .programs__img--pro {
+    width: 67px;
+    height: 28px;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -34,5 +47,27 @@
 
   .programs__link {
     font-size: 20px;
+  }
+
+  .programs__img--slim {
+    width: 140px;
+    height: 194px;
+  }
+
+  .programs__img--pro {
+    width: 268px;
+    height: 112px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .programs__img--slim {
+    width: 70px;
+    height: 97px;
+  }
+
+  .programs__img--pro {
+    width: 134px;
+    height: 56px;
   }
 }
