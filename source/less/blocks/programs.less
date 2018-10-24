@@ -145,24 +145,49 @@
 }
 
 @media (min-width: @desktop-width) {
+  .programs {
+    width: @desktop-width;
+  }
+
+  .programs__wrapper {
+    margin: 0 40px;
+    margin-bottom: 80px;
+    padding: 0;
+    width: 570px;
+  }
+
   .programs__wrapper::before {
-    left: 22px;
-    top: 24px;
+    left: 52px;
+    top: 47px;
     width: 100px;
     height: 100px;
   }
 
   .programs__wrapper--slim::after {
-    top: 22px;
-    left: 30px;
+    top: 41px;
+    left: 66px;
     width: 70px;
     height: 97px;
   }
 
   .programs__wrapper--pro::after {
-    top: 36px;
-    left: 13px;
+    top: 69px;
+    left: 34px;
     width: 134px;
     height: 56px;
+  }
+
+  .programs__title {
+    margin-left: 215px;
+    margin-bottom: 80px;
+  }
+
+  .programs__text {
+    width: 465px;
+    margin: 0 auto;
+  }
+
+  .programs__link {
+    margin: 35px 0 53px 62px;
   }
 }
