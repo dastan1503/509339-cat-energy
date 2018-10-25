@@ -1,5 +1,11 @@
 @media (min-width: @min-width) {
+  .example {
+    background-color: #f2f2f2;
+    padding: 1px 20px;
+  }
+
   .example__title {
+    margin: 21px 0;
     font-size: 36px;
     color: #111111;
   }
@@ -8,21 +14,46 @@
     font-size: 14px;
     line-height: 18px;
     font-family: "Arial", sans-serif;
+    margin: 0;
   }
 
-  .examle__piece-text {
+  .example__facts {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .example__fact {
+    position: relative;
+    width: 122px;
+    padding-top: 8px;
+    min-height: 46px;
+    border-radius: 2px;
+    border: 1px solid #cdcdcd;
+    text-align: center;
     font-size: 24px;
     text-transform: uppercase;
     color: #111111;
   }
 
-  .examle__piece-border {
-    font-family: "Arial", sans-serif;
+  .example__fact--text {
+    font-face: "Arial", sans-serif;
+    text-transform: none;
+    color: #444444;
+    position: absolute;
+    background-color: #f2f2f2;
+    width: 55px;
+    text-align: center;
+    padding: 0 16px;
     font-size: 12px;
     line-height: 12px;
+    z-index: 10;
+    bottom: -12px;
+    left: 16px;
   }
 
   .example__cost-text {
+    text-align: center;
     font-size: 14px;
     color: #111111;
     text-transform: uppercase;
@@ -45,11 +76,11 @@
     line-height: 24px;
   }
 
-  .examle__piece-text {
+  .examle__fact {
     font-size: 30px;
   }
 
-  .examle__piece-border {
+  .examle__fact--text {
     font-size: 14px;
   }
 
