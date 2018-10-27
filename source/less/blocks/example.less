@@ -59,7 +59,25 @@
     text-transform: uppercase;
   }
 
+  .example__slide-switch {
+    width: 280px;
+    display: block;
+  }
+
+  .example__slide-switch input{
+    display: none;
+  }
+
+  .example__slide-switch input + div{
+    display: none;
+  }
+
+  .example__slide-switch input:checked + div {
+    display: block;
+  }
+
   .slider__text {
+    cursor: pointer;
     font-size: 16px;
     color: #111111;
     text-transform: uppercase;
