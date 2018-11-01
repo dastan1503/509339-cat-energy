@@ -4,6 +4,7 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    flex-wrap: wrap;
     width: 320px;
     padding: 0 20px;
 
@@ -24,6 +25,7 @@
     margin: 0;
     padding: 25px 0;
     font-size: 24px;
+    text-align: center;
     color: #111111;
     background-color: #ffffff;
   }
@@ -96,33 +98,142 @@
 }
 
 @media (min-width: @tablet-width) {
+  .extra {
+    width: 768px;
+
+    &::after {
+      width: 768px;
+      top: 75px;
+      left: 0;
+    }
+  }
+
   .extra__title {
+    padding: 50px 0;
+    margin-left: 30px;
     font-size: 36px;
+    width: 410px;
+  }
+
+  .extra__item {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 628px;
+    padding: 0 40px;
   }
 
   .extra__item-title {
     font-size: 16px;
+    margin: 25px 0;
   }
 
   .extra__table td {
     font-size: 14px;
   }
 
+  .extra__item-order {
+    width: 633px;
+    height: 40px;
+    margin: 0;
+    margin-bottom: 28px;
+  }
+
+  .extra__table-row td {
+    text-align: right;
+  }
+
+  .extra__table-row td:last-child {
+    width: 132px;
+  }
+
   .extra__gift {
+    flex-direction: row;
+    align-items: center;
+    width: 708px;
+    height: 202px;
+    margin-top: 70px;
+    margin-bottom: 75px;
     background: @bg-green url("../img/gift-photo-tablet@1x.jpg") no-repeat;
+
+    &::before {
+      margin: 0 275px 0 90px;
+    }
+  }
+
+  .extra__gift p {
+    text-align: left;
   }
 }
 
 @media (min-width: @desktop-width) {
+  .extra {
+    padding: 0 40px;
+    justify-content: flex-start;
+    width: 1300px;
+    margin-bottom: 86px;
+
+    &::after {
+      width: 1300px;
+    }
+  }
+
+  .extra__title {
+    margin-left: 0;
+  }
+
+  .extra__item {
+    padding: 0;
+    width: 895px;
+  }
+
   .extra__item-title {
+    width: 325px;
     font-size: 20px;
+    margin: 21px 0;
+  }
+
+  .extra__table {
+    width: 285px;
   }
 
   .extra__table td {
     font-size: 16px;
+    text-align: left;
+  }
+
+  .extra__table-row td:first-child {
+    width: 245px;
+  }
+
+  .extra__table-row td:last-child {
+    width: 80px;
+  }
+
+  .extra__item-order {
+    width: 245px;
+    margin: 0;
   }
 
   .extra__gift {
+    position: absolute;
+    bottom: 0;
+    right: 130px;
+    flex-direction: column;
+    align-items: center;
+    width: 245px;
+    height: 290px;
+    margin: 0;
     background: @bg-green url("../img/gift-photo-desktop@1x.jpg") no-repeat;
+
+    &::before {
+      margin: 65px 0 30px 0;
+    }
+  }
+
+  .extra__gift p {
+    text-align: center;
   }
 }
