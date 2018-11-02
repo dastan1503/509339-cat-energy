@@ -39,52 +39,44 @@
           <label class="form-work__label">Возраст (лет):
             <input class="form-work__age" type="number" name="age" placeholder="1">
           </label>
-          <div class="form-work__mission mission">
-            <label class="form-work__label">
-              <input class="form-work__radio" type="radio" name="mission" value="weight-" checked>
+          <div class="form-work__mission">
+            <input class="form-work__radio" type="radio" name="mission" id="weight-" value="weight-" checked>
+            <label class="form-work__label" for="weight-">
               Похудение
             </label>
-            <label class="form-work__label">
-              <input class="form-work__radio" type="radio" name="mission" value="weight+">
+            <input class="form-work__radio" type="radio" name="mission" id="weight+"value="weight+">
+            <label class="form-work__label" for="weight+">
               Набор массы
             </label>
-            <label class="form-work__label">
-              <input class="form-work__radio" type="radio" name="mission" value="dont-know">
+            <input class="form-work__radio" type="radio" name="mission" id="i-dont-know"value="dont-know">
+            <label class="form-work__label" for="i-dont-know">
               Не знаю (нужен ваш совет)
             </label>
           </div>
         </div>
         <div class="form-work__contacts">
-          <h2 class="form-work__header">Контактные данные (владельца кота)</h2>
+          <h2 class="form-work__header">Контактные данные <span>(владельца&nbsp;кота)</span></h2>
           <label class="form-work__label">E-mail:*
-              <input type="email" name="email" placeholder="kuklachev@gmail.com" required>
+              <input class="form-work__email" type="email" name="email" placeholder="kuklachev@gmail.com" required>
           </label>
           <label class="form-work__label">Телефон:*
-              <input type="tel" name="tel" placeholder="8 (960) 900-600-90" required>
+              <input class="form-work__tel" type="tel" name="tel" placeholder="8 (960) 900-600-90" required>
           </label>
         </div>
         <div>
           <h2 class="form-work__header">Комментарий</h2>
           <textarea class="form-work__textarea" name="description">Расскажите обо всех повадках кота</textarea>
         </div>
-        <div>
+        <div class="form-work__extra">
           <h2 class="form-work__header">Дополнительно</h2>
-          <label class="form-work__label">
-            <input class="form-work__checkbox" type="checkbox" name="extra" value="sweetener" checked>
-            Сахарозаменитель
-          </label>
-          <label class="form-work__label">
-            <input class="form-work__checkbox" type="checkbox" name="extra" value="water">
-            Питьевая вода
-          </label>
-          <label class="form-work__label">
-            <input class="form-work__checkbox" type="checkbox" name="extra" value="milk">
-            Молоко
-          </label>
-          <label class="form-work__label">
-            <input class="form-work__checkbox" type="checkbox" name="extra" value="vitamins">
-            Витамины
-          </label>
+          <input class="form-work__checkbox" id="sweetener" type="checkbox" name="extra" value="sweetener" checked>
+          <label class="form-work__label" for="sweetener">Сахарозаменитель</label>
+          <input class="form-work__checkbox" id="water" type="checkbox" name="extra" value="water">
+          <label class="form-work__label" for="water">Питьевая вода</label>
+          <input class="form-work__checkbox" id="milk" type="checkbox" name="extra" value="milk">
+          <label class="form-work__label" for="milk">Молоко</label>
+          <input class="form-work__checkbox" id="vitamins" type="checkbox" name="extra" value="vitamins">
+          <label class="form-work__label" for="vitamins">Витамины</label>
         </div>
         <button class="form-work__submit button--green" type="submit">Отправить заявку</button>
         <p class="form-work__required-text">*-Обязательные поля</p>
