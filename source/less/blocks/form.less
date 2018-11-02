@@ -219,7 +219,6 @@
     top: 45px;
     left: 0;
     width: 768px;
-    z-index: -1;
   }
 
   .form-work input::placeholder,
@@ -248,8 +247,9 @@
   }
 
   .form-work__textarea {
-    width: 628px;
+    width: 598px;
     margin-bottom: 30px;
+    margin-left: 70px;
   }
 
   .form-work__extra {
@@ -277,5 +277,65 @@
 @media (min-width: @desktop-width) {
   .form {
     width: @desktop-width;
+  }
+
+  .form__title {
+    margin-left: 40px;
+  }
+
+  .form__description {
+    margin-left: 40px;
+    margin-bottom: 60px;
+  }
+
+  .form-work label {
+    margin-left: 40px;
+    width: 570px;
+  }
+
+  .form-work__mission {
+    margin: 0;
+    width: 570px;
+    margin-left: 40px;
+  }
+
+  .form-work__base-info {
+    width: 100%;
+    height: 210px;
+  }
+
+  .form-work__base-info ~ div::before {
+    width: 1300px;
+  }
+
+  .form-work__header {
+    margin-left: 0;
+    margin-bottom: 80px;
+    margin-right: 500px;
+  }
+
+  .form-work__contacts .form-work__label {
+    margin-right: 40px;
+    margin-left: 0;
+    padding-left: 40px;
+  }
+
+  .form-work__textarea {
+    width: 1220px;
+    margin-left: 40px;
+  }
+
+  .form-work__extra .form-work__header {
+    margin-right: 1000px;
+  }
+
+  .form-work__checkbox + .form-work__label {
+    width: 285px;
+  }
+
+  .form-work__submit {
+    width: 570px;
+    margin-left: 40px;
+    margin-right: 80px;
   }
 }
