@@ -36,6 +36,7 @@
   }
 
   .form-work__label {
+    position: relative;
     margin-left: 20px;
     width: 280px;
     display: flex;
@@ -46,6 +47,30 @@
     font-size: 16px;
     text-transform: uppercase;
     color: #222222;
+  }
+
+  .form-work__email + svg,
+  .form-work__tel + svg {
+    position: absolute;
+    right: 19px;
+  }
+
+  .form-work__email:invalid + svg,
+  .form-work__tel:invalid + svg {
+    fill: #ff8282;
+  }
+
+  .form-work__email:focus:valid + svg,
+  .form-work__tel:focus:valid + svg {
+    fill: @bg-green;
+  }
+
+  .form-work__email + svg {
+    right: 16px;
+  }
+
+  .form-work__tel + svg {
+    right: 13px;
   }
 
   .form-work__label input:invalid,
@@ -301,6 +326,11 @@
   .form-work__label input:active,
   .form-work__label input:focus {
     border: 2px solid #444444;
+  }
+
+  .form-work__email:active + svg,
+  .form-work__tel:active + svg {
+    fill: @bg-green;
   }
 
   .form-work__checkbox + .form-work__label:hover::before,
