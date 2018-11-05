@@ -48,6 +48,12 @@
     color: #222222;
   }
 
+  .form-work__label input:invalid,
+  .form-work__label input:invalid:focus {
+    border: 2px solid #ff8282;
+    box-shadow: none;
+  }
+
   .form-work__weight,
   .form-work__age,
   .form-work__name,
@@ -286,6 +292,25 @@
   .form__description {
     margin-left: 40px;
     margin-bottom: 60px;
+  }
+
+  .form-work__label input:hover {
+    border: 1px solid #cdcdcd;
+  }
+
+  .form-work__label input:active,
+  .form-work__label input:focus {
+    border: 2px solid #444444;
+  }
+
+  .form-work__checkbox + .form-work__label:hover::before,
+  .form-work__radio + .form-work__label:hover::before {
+    border: 1px solid #bcbcbc;
+  }
+
+  .form-work__checkbox + .form-work__label:active,
+  .form-work__radio + .form-work__label:active {
+    opacity: 0.3;
   }
 
   .form-work label {

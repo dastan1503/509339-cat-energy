@@ -11,6 +11,14 @@
     background-size: 128px 24px;
     width: 100%;
     min-height: 94px;
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
   }
 
   .page-footer__logo span {
@@ -96,6 +104,10 @@
     font-family: "Arial", sans-serif;
     text-decoration: none;
   }
+
+  .page-footer__developer svg {
+    fill: #666666;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -172,5 +184,21 @@
     &::after {
       background-position: 905px 150px;
     }
+  }
+
+  .page-footer__link:active {
+    opacity: 0.3;
+  }
+
+  .page-footer__link:hover * {
+    fill: @bg-green;
+  }
+
+  .page-footer__developer:active {
+    opacity: 0.3;
+  }
+
+  .page-footer__developer:hover svg {
+    fill: @bg-green;
   }
 }
