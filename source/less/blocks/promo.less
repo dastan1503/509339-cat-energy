@@ -1,0 +1,109 @@
+@media (min-width: @min-width) {
+  .promo {
+    color: #ffffff;
+    width: calc(100% - 40px);
+    padding: 0 20px;
+    position: relative;
+  }
+
+  .promo::before {
+    content: "";
+    width: 320px;
+    height: 305px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: @bg-green url("../img/index-background-mobile@1x.jpg") left top 100% no-repeat;
+    z-index: -1;
+  }
+
+  .promo__title {
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 36px;
+    text-align: center;
+    margin: 0;
+    padding-top: 28px;
+  }
+
+  .promo__text {
+    text-align: center;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin: 20px 0 30px;
+  }
+
+  .promo__button {
+    font-size: 14px;
+    width: 100%;
+    min-height: 40px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .promo {
+    min-height: 820px;
+    color: #111111;
+    padding: 0 120px;
+  }
+
+  .promo__img {
+    position: absolute;
+    top: 230px;
+    left: 30px;
+    width: 709px;
+    height: 609px;
+    z-index: -1;
+  }
+
+  .promo::before {
+    background: none;
+  }
+
+  .promo__title {
+    text-align: left;
+    font-size: 60px;
+    line-height: 60px;
+    width: 430px;
+  }
+
+  .promo__text {
+    margin: 45px 0;
+    text-align: left;
+    font-size: 20px;
+  }
+
+  .promo__button {
+    margin-top: 3px;
+    font-size: 20px;
+    width: 245px;
+    min-height: 52px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .promo {
+    min-height: 550px;
+    width: 1060px;
+    padding-top: 20px;
+  }
+
+  .promo::before {
+    content: "";
+    width: 720px;
+    height: 696px;
+    position: absolute;
+    left: 650px;
+    top: -175px;
+    background: @bg-green url("../img/index-background-desktop@1x.jpg") center top 100% no-repeat;
+    z-index: -1;
+  }
+
+  .promo__img {
+    top: -30px;
+    left: 490px;
+    width: 552px;
+    height: 499px;
+    z-index: -1;
+  }
+}

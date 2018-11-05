@@ -1,0 +1,121 @@
+@media (min-width: @min-width) {
+  .how-it-work {
+    width: 280px;
+    margin: 0 auto;
+  }
+
+  .how-it-work__title {
+    font-size: 36px;
+    color: #111111;
+  }
+
+  .how-it-work__list {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .how-it-work__item {
+    position: relative;
+    margin: 20px auto;
+    font-family: "Arial", sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    display: flex;
+
+    &::before {
+      display: block;
+      margin-right: 20px;
+      min-width: 60px;
+      min-height: 60px;
+      content: "";
+    }
+  }
+
+  .how-it-work__item:nth-child(1)::before {
+    background: @bg-green url("../img/advantage-leaf@1x.png") center center no-repeat;
+  }
+
+  .how-it-work__item:nth-child(2)::before {
+    background: @bg-green url("../img/advantage-powder@1x.png") center center no-repeat;
+  }
+
+  .how-it-work__item:nth-child(3)::before {
+    background: @bg-green url("../img/advantage-dining@1x.png") center center no-repeat;
+  }
+
+  .how-it-work__item:nth-child(4)::before {
+    background: @bg-green url("../img/advantage-clock@1x.png") center center no-repeat;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .how-it-work {
+    width: 708px;
+  }
+
+  .how-it-work__title {
+    font-size: 60px;
+    margin-bottom: 64px;
+  }
+
+  .how-it-work__item {
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    flex-direction: column;
+    width: 245px;
+    margin-right: 109px;
+
+    &::before {
+      width: 80px;
+      height: 80px;
+      margin-bottom: 36px;
+    }
+  }
+
+  .how-it-work__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .how-it-work__item::after {
+    position: absolute;
+    left: 124px;
+    top: 90px;
+    color: #f2f2f2;
+    font-family: "Oswald", "Arial", sans-serif;
+    font-size: 232px;
+    z-index: -1;
+  }
+
+  .how-it-work__item:nth-child(1)::after {
+    content: "1";
+  }
+
+  .how-it-work__item:nth-child(2)::after {
+    content: "2";
+  }
+
+  .how-it-work__item:nth-child(3)::after {
+    content: "3";
+  }
+
+  .how-it-work__item:nth-child(4)::after {
+    content: "4";
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .how-it-work {
+    width: @desktop-width;
+  }
+
+  .how-it-work__title {
+    margin-left: 40px;
+  }
+
+  .how-it-work__item {
+    margin: 0 40px;
+  }
+}
