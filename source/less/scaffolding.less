@@ -12,47 +12,38 @@
   font-style: normal;
 }
 
-@media (min-width: @min-width) {
-  body {
-    overflow-x: hidden;
-    max-width: @min-width;
-    margin: 0 auto;
-    padding: 0;
-    font-size: 18px;
-    font-family: "Oswald", "Arial", sans-serif;
-    color: #444444;
-    font-weight: normal;
-    background-color: #ffffff;
-    display: flex;
-    flex-direction: column;
+body {
+  min-width: @min-width;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  font-size: 18px;
+  font-family: "Oswald", "Arial", sans-serif;
+  color: #444444;
+  font-weight: normal;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.button--green {
+  .green-button();
+
+  &:hover {
+    background-color: #5eaa2f;
   }
 
-  img {
-    max-width: 100%;
-    height: auto;
-  }
-
-  .button--green {
-    .green-button();
-
-    &:hover {
-      background-color: #5eaa2f;
-    }
-
-    &:active {
-      color: #8fc46e;
-    }
+  &:active {
+    color: #8fc46e;
   }
 }
 
-@media (min-width: @tablet-width) {
-  body {
-    max-width: @tablet-width;
-  }
-}
-
-@media (min-width: @desktop-width) {
-  body {
-    max-width: @desktop-width;
-  }
+.visually-hidden {
+  opacity: 0;
+  position: absolute;
 }

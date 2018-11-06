@@ -8,10 +8,15 @@
   </head>
   <body>
     <header class="page-header">
-      <a href="index.html" class="page-header__logo" title="Cat energy">
-        <h1>Cat energy</h1>
-      </a>
+      <h1 class="visually-hidden">Cat energy</h1>
       <nav class="page-header__nav">
+        <a href="index.html" class="page-header__logo" title="Cat energy">
+          <picture>
+            <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg 1x">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg 1x">
+            <img class="page-header__logo-img" src="img/logo-mobile.svg" alt="logo">
+          </picture>
+        </a>
         <ul class="page-header__list">
           <li class="page-header__item">
             <a href="index.html">Главная</a>
@@ -51,7 +56,7 @@
               <td>700 Р</td>
             </tr>
           </table>
-          <button class="catalog__order-button button--green">Заказать</button>
+          <a href="#" class="catalog__order-button button--green">Заказать</a>
         </article>
         <article class="catalog__item">
           <a href="#" class="catalog__item-link">
@@ -76,7 +81,7 @@
               <td>1000 Р</td>
             </tr>
           </table>
-          <button class="catalog__order-button button--green">Заказать</button>
+          <a href="#" class="catalog__order-button button--green">Заказать</a>
         </article>
         <article class="catalog__item">
           <a href="#" class="catalog__item-link">
@@ -101,7 +106,7 @@
               <td>700 Р</td>
             </tr>
           </table>
-          <button class="catalog__order-button button--green">Заказать</button>
+          <a href="#" class="catalog__order-button button--green">Заказать</a>
         </article>
         <article class="catalog__item">
           <a href="#" class="catalog__item-link">
@@ -126,7 +131,7 @@
               <td>1000 Р</td>
             </tr>
           </table>
-          <button class="catalog__order-button button--green">Заказать</button>
+          <a href="#" class="catalog__order-button button--green">Заказать</a>
         </article>
         <article class="catalog__item">
           <a href="#" class="catalog__item-link">
@@ -151,7 +156,7 @@
               <td>400 Р</td>
             </tr>
           </table>
-          <button class="catalog__order-button button--green">Заказать</button>
+          <a href="#" class="catalog__order-button button--green">Заказать</a>
         </article>
         <article class="catalog__item">
           <a href="#" class="catalog__item-link">
@@ -176,7 +181,7 @@
               <td>700 Р</td>
             </tr>
           </table>
-          <button class="catalog__order-button button--green">Заказать</button>
+          <a href="#" class="catalog__order-button button--green">Заказать</a>
         </article>
         <article class="catalog__item">
           <a href="#" class="catalog__item-link">
@@ -201,12 +206,12 @@
               <td>500 Р</td>
             </tr>
           </table>
-          <button class="catalog__order-button button--green">Заказать</button>
+          <a href="#" class="catalog__order-button button--green">Заказать</a>
         </article>
         <div class="catalog__show-all">
           <h3 class="catalog__show-all-title">Показать еще 100500 товаров</h3>
           <p  class="catalog__show-all-text">На самом деле вкусов гораздо больше!</p>
-          <button class="catalog__show-all-button">Показать все</button>
+          <a href="#" class="catalog__show-all-button">Показать все</a>
         </div>
       </section>
       <section class="catalog__extra extra">
@@ -219,7 +224,7 @@
               <td>100 Р</td>
             </tr>
           </table>
-          <button class="extra__item-order button--green">Заказать</button>
+          <a href="#" class="extra__item-order button--green">Заказать</a>
         </div>
         <div class="extra__item">
           <h3 class="extra__item-title">Питьевая вода</h3>
@@ -229,7 +234,7 @@
               <td>50 Р</td>
             </tr>
           </table>
-          <button class="extra__item-order button--green">Заказать</button>
+          <a href="#" class="extra__item-order button--green">Заказать</a>
         </div>
         <div class="extra__item">
           <h3 class="extra__item-title">Молоко</h3>
@@ -239,7 +244,7 @@
               <td>100 Р</td>
             </tr>
           </table>
-          <button class="extra__item-order button--green">Заказать</button>
+          <a href="#" class="extra__item-order button--green">Заказать</a>
         </div>
         <div class="extra__item">
           <h3 class="extra__item-title">Витамины</h3>
@@ -249,7 +254,7 @@
               <td>300 Р</td>
             </tr>
           </table>
-          <button class="extra__item-order button--green">Заказать</button>
+          <a href="#" class="extra__item-order button--green">Заказать</a>
         </div>
         <div class="extra__gift">
           <img class="extra__gift-icon" src="img/icon-gift.svg" alt="gift">
@@ -263,6 +268,7 @@
           <p class="page-footer__description">Приглашаем к&nbsp;сотрудничеству дилеров!</p>
           <address class="page-footer__adress">ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span></address>
         </div>
+        <div class="page-footer__map"></div>
       </div>
       <div class="page-footer__wrapper">
         <a href="#" class="page-footer__logo"><span>Cat Energy</span></a>

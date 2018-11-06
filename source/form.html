@@ -8,10 +8,15 @@
   </head>
   <body>
     <header class="page-header">
-      <a href="index.html" class="page-header__logo" title="Cat energy">
-        <h1>Cat energy</h1>
-      </a>
+      <h1 class="visually-hidden">Cat energy</h1>
       <nav class="page-header__nav">
+        <a href="index.html" class="page-header__logo" title="Cat energy">
+          <picture>
+            <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg 1x">
+              <source media="(min-width: 768px)" srcset="img/logo-tablet.svg 1x">
+              <img class="page-header__logo-img" src="img/logo-mobile.svg" alt="logo">
+          </picture>
+        </a>
         <ul class="page-header__list">
           <li class="page-header__item">
             <a href="index.html">Главная</a>
@@ -95,6 +100,7 @@
           <p class="page-footer__description">Приглашаем к&nbsp;сотрудничеству дилеров!</p>
           <address class="page-footer__adress">ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span></address>
         </div>
+        <div class="page-footer__map"></div>
       </div>
       <div class="page-footer__wrapper">
         <a href="#" class="page-footer__logo"><span>Cat Energy</span></a>
