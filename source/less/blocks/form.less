@@ -5,6 +5,7 @@
 .form__title {
   width: 280px;
   margin: 0 auto;
+  margin-top: 20px;
   color: #111111;
   font-size: 36px;
   font-weight: normal;
@@ -18,6 +19,8 @@
   width: 260px;
   padding-right: 20px;
   margin: 0 auto;
+  margin-top: 28px;
+  margin-bottom: 40px;
 }
 
 .form__program {
@@ -29,11 +32,12 @@
 }
 
 .form__base-info {
-  width: 280px;
+  width: 100%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  margin-bottom: 15px;
 }
 
 .form__label {
@@ -44,7 +48,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
-  margin-bottom: 14px;
+  margin-bottom: 15px;
   font-size: 16px;
   text-transform: uppercase;
   color: #222222;
@@ -100,14 +104,19 @@
 
 .form__mission {
   width: 280px;
-  padding-top: 20px;
-  padding-bottom: 10px;
-  border-top: 1px solid #ededed;
-  border-bottom: 1px solid #ededed;
+  margin: 0 auto;
+  padding: 15px 20px 10px 20px;
+  margin-top: 13px;
+  border: 1px solid #ededed;
 }
 
 .form__radio {
   display: none;
+}
+
+.form__radio + .form__label {
+  margin-left: 0;
+  margin-bottom: 13px;
 }
 
 .form__radio + .form__label::before {
@@ -140,7 +149,7 @@
   &::before {
     content: "";
     position: relative;
-    top: 35px;
+    top: 25px;
     left: 0;
     display: block;
     height: 3px;
@@ -150,26 +159,36 @@
   }
 }
 
+.form__contacts {
+  margin-bottom: 5px;
+}
+
 .form__contacts .form__header {
   width: 200px;
 }
 
+.form__comments {
+  margin-bottom: 15px;
+}
 .form__comments .form__header {
   width: 130px;
 }
 
 .form__extra .form__header {
   width: 155px;
+  margin-bottom: 30px;
 }
 
 .form__header {
   position: relative;
+  font-weight: normal;
   left: calc(50% - 160px);
   padding: 0 20px;
   background-color: #ffffff;
   font-size: 24px;
   line-height: 24px;
   color: #111111;
+  margin-top: 10px;
   margin-bottom: 35px;
 }
 
@@ -178,7 +197,7 @@
   color: #444444;
   font-size: 14px;
   align-self: center;
-  margin-bottom: 30px;
+  margin-bottom: 32px;
   margin-top: 20px;
 }
 
@@ -200,6 +219,10 @@
   display: block;
   margin-right: 15px;
   border: 1px solid #cecece;
+}
+
+.form__checkbox + .form__label{
+  margin-bottom: 13px;
 }
 
 .form__checkbox:checked + .form__label::before {
@@ -235,6 +258,7 @@
   width: 280px;
   height: 40px;
   margin: 0 auto;
+  margin-top: 23px;
   font-size: 16px;
 }
 
