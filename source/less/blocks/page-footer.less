@@ -7,7 +7,7 @@
 
 .page-footer__logo {
   display: flex;
-  background: url("../img/logo-footer.svg") center center no-repeat;
+  background: url("../img/logo-footer.svg") center 40px no-repeat;
   background-size: 128px 24px;
   width: 100%;
   min-height: 94px;
@@ -43,8 +43,8 @@
     content: "";
     width: 60px;
     height: 52px;
-    top: 160px;
-    left: calc(50% - 35px);
+    top: 140px;
+    left: calc(50% - 30px);
     background-image: url("../img/map-pin.png");
     background-repeat: no-repeat;
     background-size: 60px 52px;
@@ -53,6 +53,8 @@
 }
 
 .page-footer__contacts {
+  display: flex;
+  flex-direction: column;
   width: 100%;
 }
 
@@ -77,6 +79,7 @@
   width: 140px;
   font-size: 16px;
   line-height: 20px;
+  margin: 0;
 }
 
 .page-footer__adress {
@@ -99,8 +102,19 @@
   min-height: 62px;
 }
 
+.page-footer__item {
+  height: 62px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .page-footer__link {
+  text-decoration: none;
   padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .page-footer__copyright {
