@@ -439,6 +439,7 @@ div.form__submit::before {
 @media (min-width: @desktop-width) {
   .form__title {
     width: 1220px;
+    margin-top: 55px;
   }
 
   .form__description {
@@ -450,27 +451,43 @@ div.form__submit::before {
 
   .form label {
     width: 570px;
+    margin-left: 0;
   }
 
-  .form__mission {
+  div.form__mission {
     margin: 0;
-    width: 570px;
-    margin-left: 80px;
+    width: 514px;
+    padding-bottom: 10px;
   }
 
   .form__base-info {
     width: 1220px;
-    height: 210px;
+    height: 220px;
+    align-content: space-between;
+    margin-top: 5px;
+  }
+
+  .form__base-info ~ div::before {
+    top: 65px;
   }
 
   .form__header {
     margin-left: 0;
     margin-bottom: 80px;
+    margin-top: 50px;
     left: calc(50% - 650px);
   }
 
   .form__contacts .form__label {
     margin: 0;
+  }
+
+  .form__contacts {
+    margin-bottom: 25px;
+  }
+
+  .form__contacts .form__header {
+    margin-bottom: 80px;
   }
 
   .form__contacts-wrapper {
@@ -479,26 +496,38 @@ div.form__submit::before {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 50px;
   }
 
   .form__textarea {
-    width: 1220px;
+    width: 1180px;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+  }
+
+  .form__comments {
+    margin-bottom: 10px;
   }
 
   .form__checkbox + .form__label {
-    width: 285px;
+    width: 245px;
   }
 
   .form__extra-wrapper {
     width: 1220px;
+    justify-content: space-between;
   }
 
   div.form__submit {
     width: 1220px;
+    margin-top: 28px;
+    margin-bottom: 80px;
   }
 
   .form__submit-button {
     width: 570px;
+  }
+
+  .form__required-text {
+    margin-left: 80px;
   }
 }
