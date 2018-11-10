@@ -123,6 +123,10 @@
 }
 
 @media (min-resolution: 1.5dppx) {
+  .example__slider-item:checked + label::before  {
+    background-size: contain;
+  }
+
   .example__slider-item--before:checked + label::before {
     background: url("../img/before-mobile@2x.png") no-repeat;
   }
