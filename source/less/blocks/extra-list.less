@@ -102,18 +102,18 @@
 }
 
 @media (min-width: @tablet-width) {
-  .extra {
-    &::after {
-      top: 65px;
-      left: 0;
-    }
+  .extra::after {
+    top: 88px;
+    left: 0;
   }
 
   .extra__title {
-    margin-left: calc(50% - 364px);
+    margin-top: 58px;
+    margin-left: calc(50% - 355px);
     font-size: 36px;
     width: 410px;
-    padding: 0 25px;
+    padding: 0 5px;
+    margin-bottom: 70px;
   }
 
   .extra__item {
@@ -124,22 +124,23 @@
     justify-content: space-between;
     width: 628px;
     padding: 0 40px;
+    border: 2px solid #cdcdcd;
   }
 
   .extra__item-title {
-    font-size: 16px;
-    margin: 25px 0;
+    font-size: 20px;
+    margin: 20px 0;
   }
 
   .extra__table td {
-    font-size: 14px;
+    font-size: 16px;
   }
 
   .extra__item-order {
     width: 633px;
     height: 40px;
     margin: 0;
-    margin-bottom: 28px;
+    margin-bottom: 26px;
   }
 
   .extra__table-row td {
@@ -147,7 +148,7 @@
   }
 
   .extra__table-row td:last-child {
-    width: 132px;
+    width: 87px;
   }
 
   .extra__gift {
@@ -172,11 +173,18 @@
 @media (min-width: @desktop-width) {
   .extra {
     justify-content: flex-start;
-    margin-bottom: 86px;
+    margin-bottom: 87px;
+
+    &::after {
+      top: 100px;
+    }
   }
 
   .extra__title {
-    margin-left: calc(50% - 630px);
+    margin-top: 68px;
+    width: 340px;
+    padding: 0 40px;
+    margin-left: calc(50% - 650px);
   }
 
   .extra__item {
@@ -184,6 +192,9 @@
     margin: 0;
     margin-left: calc(50% - 610px);
     width: 895px;
+    border: none;
+    border-bottom: 2px solid #cdcdcd;
+    justify-content: flex-start;
   }
 
   .extra__item-title {
@@ -193,7 +204,7 @@
   }
 
   .extra__table {
-    width: 285px;
+    width: 325px;
   }
 
   .extra__table td {
@@ -206,7 +217,8 @@
   }
 
   .extra__table-row td:last-child {
-    width: 80px;
+    text-align: left;
+    width: auto;
   }
 
   .extra__item-order {
@@ -227,10 +239,11 @@
   }
 
   .extra__gift-icon {
-    margin: 65px 0 30px 0;
+    margin: 65px 0 45px 0;
   }
 
   .extra__gift p {
+    width: 180px;
     text-align: center;
   }
 }

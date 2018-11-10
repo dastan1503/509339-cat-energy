@@ -36,7 +36,7 @@
 
 .programs__wrapper--pro::after {
   position: absolute;
-  top: 36px;
+  top: 33px;
   left: 13px;
   content: url("../img/icon-cat-pro.svg");
   width: 67px;
@@ -62,7 +62,10 @@
 }
 
 .programs__link {
-  display: block;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
   font-size: 16px;
   text-transform: uppercase;
   text-decoration: none;
@@ -71,8 +74,7 @@
   margin-top: 15px;
 
   &::after {
-    display: inline-block;
-    vertical-align: center;
+    display: block;
     content: url("../img/icon-right-arrow-long.svg");
     margin-left: 12px;
     width: 24px;
@@ -92,6 +94,7 @@
 
 @media (min-width: @tablet-width) {
   .programs {
+    margin-top: 40px;
     width: 708px;
   }
 
@@ -104,21 +107,30 @@
 
   .programs__title {
     margin-left: 0;
-    margin-top: 80px;
+    margin-top: 70px;
+    margin-bottom: 15px;
     font-size: 36px;
   }
 
   .programs__text {
-    width: 345px;
+    width: 375px;
     font-size: 16px;
     line-height: 24px;
     border: none;
     margin: 0;
   }
 
+  .programs__wrapper--pro .programs__text {
+    width: 340px;
+  }
+
   .programs__link {
     font-size: 20px;
-    margin: 60px 0;
+    margin: 33px 0 55px 0;
+
+    &::after {
+      margin-left: 20px;
+    }
   }
 
   .programs__wrapper {
@@ -144,11 +156,13 @@
 
 @media (min-width: @desktop-width) {
   .programs {
-    width: 1200px;
+    width: 1220px;
+    margin-top: 55px;
+    justify-content: space-between;
   }
 
   .programs__wrapper {
-    margin-bottom: 80px;
+    margin-bottom: 50px;
     padding: 0;
     width: 570px;
   }
@@ -176,15 +190,19 @@
 
   .programs__title {
     margin-left: 215px;
-    margin-bottom: 80px;
+    margin-bottom: 65px;
   }
 
   .programs__text {
     width: 465px;
-    margin: 0 auto;
+    margin-left: 52px;
+  }
+
+  .programs__wrapper--pro .programs__text {
+    width: 465px;
   }
 
   .programs__link {
-    margin: 35px 0 53px 62px;
+    margin: 5px 0 53px 52px;
   }
 }
