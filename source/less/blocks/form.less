@@ -69,18 +69,18 @@
   right: 13px;
 }
 
-.form__email:invalid + svg,
-.form__tel:invalid + svg {
-  fill: #ff8282;
-}
-
 .form__email:focus:valid + svg,
 .form__tel:focus:valid + svg {
   fill: @bg-green;
 }
 
-.form__label input:invalid,
-.form__label input:invalid:focus {
+.form__email:focus:invalid + svg,
+.form__tel:focus:invalid + svg {
+  fill: #ff8282;
+}
+
+.form__label input:focus:invalid,
+.form__label input:focus:invalid:focus {
   outline: 2px solid #ff8282;
   border: none;
   box-shadow: none;
