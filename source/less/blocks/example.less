@@ -122,17 +122,15 @@
   background: url("../img/after-mobile@1x.png") no-repeat;
 }
 
-@media (min-resolution: 1.5dppx) {
-  .example__slider-item:checked + label::before  {
-    background-size: contain;
-  }
-
+@media (min-resolution: 1.5dppx), (min-resolution: 144dpi) {
   .example__slider-item--before:checked + label::before {
     background: url("../img/before-mobile@2x.png") no-repeat;
+    background-size: 280px, 240px;
   }
 
   .example__slider-item--after:checked + label::before {
     background: url("../img/after-mobile@2x.png") no-repeat;
+    background-size: 280px, 240px;
   }
 }
 
@@ -266,13 +264,15 @@
     background: url("../img/after-tablet@1x.png") no-repeat;
   }
 
-  @media (min-resolution: 1.5dppx) {
+  @media (min-resolution: 1.5dppx), (min-resolution: 144dpi) {
     .example__slider-item--before:checked + label::before {
       background: url("../img/before-tablet@2x.png") no-repeat;
+      background-size: 610px 517px;
     }
 
     .example__slider-item--after:checked + label::before {
       background: url("../img/after-tablet@2x.png") no-repeat;
+      background-size: 610px 517px;
     }
   }
 
@@ -387,7 +387,7 @@
     left: -466px;
   }
 
-  @media (min-resolution: 1.5dppx) {
+  @media (min-resolution: 1.5dppx), (min-resolution: 144dpi) {
     .example__slider-item--before:checked + label::before {
       background: url("../img/before-desktop@2x.png") no-repeat;
     }

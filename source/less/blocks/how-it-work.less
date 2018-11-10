@@ -30,7 +30,7 @@
     margin-right: 20px;
     min-width: 60px;
     min-height: 60px;
-    background-size: contain;
+    background-size: 60px 60px;
     content: "";
   }
 }
@@ -51,21 +51,25 @@
   background: @bg-green url("../img/advantage-clock@1x.png") center center no-repeat;
 }
 
-@media (min-resolution: 1.5dppx) {
+@media (min-resolution: 1.5dppx), (min-resolution: 144dpi) {
   .how-it-work__item:nth-child(1)::before {
     background-image: url("../img/advantage-leaf@2x.png");
+    background-size: 60px 60px;
   }
 
   .how-it-work__item:nth-child(2)::before {
     background-image: url("../img/advantage-powder@2x.png");
+    background-size: 60px 60px;
   }
 
   .how-it-work__item:nth-child(3)::before {
     background-image: url("../img/advantage-dining@2x.png");
+    background-size: 60px 60px;
   }
 
   .how-it-work__item:nth-child(4)::before {
     background-image: url("../img/advantage-clock@2x.png");
+    background-size: 60px 60px;
   }
 }
 
