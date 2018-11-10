@@ -8,17 +8,6 @@ var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 var server = require("browser-sync").create();
 var csso = require("gulp-csso")
-var imagemin = require("gulp-imagemin")
-
-gulp.task("images", function () {
-  return gulp.src("source/img/**/*.{png,jpg,svg}")
-    .pipe(imagemin([
-      imagemin.optipng({optimizationlevel: 3}),
-      imagemin.jpegtran({progressive: true}),
-      imagemin.svgo()
-    ]))
-    .pipe(gulp.dest("source/img"));
-});
 
 gulp.task("css", function () {
   return gulp.src("source/less/style.less")
