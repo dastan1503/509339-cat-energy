@@ -63,6 +63,12 @@
   background: @bg-green url("../img/gift-photo-mobile@1x.jpg") no-repeat;
 }
 
+@media (min-resolution: 1.5dppx) {
+  .extra__gift {
+    background-image: url("../img/gift-photo-mobile@2x.jpg");
+  }
+}
+
 .extra__gift-icon {
   width: 55px;
   height: 60px;
@@ -161,6 +167,12 @@
     background: @bg-green url("../img/gift-photo-tablet@1x.jpg") no-repeat;
   }
 
+  @media (min-resolution: 1.5dppx) {
+    .extra__gift {
+      background-image: url("../img/gift-photo-tablet@2x.jpg");
+    }
+  }
+
   .extra__gift-icon {
     margin: 0 275px 0 90px;
   }
@@ -237,6 +249,13 @@
     margin: 0;
     background: @bg-green url("../img/gift-photo-desktop@1x.jpg") no-repeat;
   }
+
+  @media (min-resolution: 1.5dppx) {
+    .extra__gift {
+      background-image: url("../img/gift-photo-desktop@2x.jpg");
+    }
+  }
+
 
   .extra__gift-icon {
     margin: 65px 0 45px 0;
