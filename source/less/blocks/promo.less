@@ -16,6 +16,14 @@
   z-index: -1;
 }
 
+@media (min-resolution: 1.5dppx), (min-resolution: 144dpi) {
+  .promo::before {
+    background-image: url("../img/index-background-mobile@2x.jpg");
+    background-size: 320px auto;
+  }
+}
+
+
 .promo__wrapper {
   width: 280px;
   margin: 0 auto;
@@ -131,6 +139,12 @@
     right: 0;
     background: @bg-green url("../img/index-background-desktop@1x.jpg") right top no-repeat;
     z-index: -1;
+  }
+
+  @media (min-resolution: 1.5dppx), (min-resolution: 144dpi) {
+    .promo::before {
+      background-image: url("../img/index-background-desktop@2x.jpg");
+    }
   }
 
   .promo__img {

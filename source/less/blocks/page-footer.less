@@ -40,6 +40,11 @@
   background-position: center center, center center;
 }
 
+@media (min-resolution: 1.5dppx), (min-resolution: 144dpi) {
+  background-image: url("../img/map-pin.png"), url("../img/bg-map-mobile@2x.png");
+  background-size: 60px 52px, 320px 360px;
+}
+
 .page-footer__map iframe {
   width: 100%;
   height: 365px;
@@ -172,6 +177,11 @@
     background-position: center center, center center;
   }
 
+  @media (min-resolution: 1.5dppx), (min-resolution: 144dpi) {
+    background-image: url("../img/map-pin.png"), url("../img/bg-map-tablet@2x.png");
+    background-size: 124px 106px, 767px 400px;
+  }
+
   .page-footer__map iframe {
     height: 410px;
   }
@@ -271,6 +281,11 @@
     background-repeat: no-repeat, no-repeat;
     background-size: 124px 106px, 1440px 400px;
     background-position: calc(50% + 340px) center, center center;
+  }
+
+  @media (min-resolution: 1.5dppx), (min-resolution: 144dpi) {
+    background-image: url("../img/map-pin.png"), url("../img/bg-map-desktop@2x.png");
+    background-size: 124px 106px, 1440px 400px;
   }
 
   .page-footer__map iframe {

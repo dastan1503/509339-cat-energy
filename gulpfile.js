@@ -3,9 +3,11 @@
 var gulp = require("gulp");
 var less = require("gulp-less");
 var plumber = require("gulp-plumber");
+var rename = require("gulp-rename")
 var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 var server = require("browser-sync").create();
+var csso = require("gulp-csso")
 
 gulp.task("css", function () {
   return gulp.src("source/less/style.less")
@@ -14,6 +16,9 @@ gulp.task("css", function () {
     .pipe(postcss([
       autoprefixer()
     ]))
+    .pipe(gulp.dest("source/css"))
+    .pipe(csso())
+    .pipe(rename("style-min.css"))
     .pipe(gulp.dest("source/css"))
     .pipe(server.stream());
 });

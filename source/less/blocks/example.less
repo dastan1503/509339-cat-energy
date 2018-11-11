@@ -122,6 +122,18 @@
   background: url("../img/after-mobile@1x.png") no-repeat;
 }
 
+@media (min-resolution: 1.5dppx), (min-resolution: 144dpi) {
+  .example__slider-item--before:checked + label::before {
+    background: url("../img/before-mobile@2x.png") no-repeat;
+    background-size: 280px, 240px;
+  }
+
+  .example__slider-item--after:checked + label::before {
+    background: url("../img/after-mobile@2x.png") no-repeat;
+    background-size: 280px, 240px;
+  }
+}
+
 .example__slider-item + label::after {
   content: "";
   display: block;
@@ -252,6 +264,18 @@
     background: url("../img/after-tablet@1x.png") no-repeat;
   }
 
+  @media (min-resolution: 1.5dppx), (min-resolution: 144dpi) {
+    .example__slider-item--before:checked + label::before {
+      background: url("../img/before-tablet@2x.png") no-repeat;
+      background-size: 610px 517px;
+    }
+
+    .example__slider-item--after:checked + label::before {
+      background: url("../img/after-tablet@2x.png") no-repeat;
+      background-size: 610px 517px;
+    }
+  }
+
   .example__slider-item ~ .example__slider-toggle {
     width: 430px;
     height: 6px;
@@ -361,5 +385,15 @@
   .example__slider-item--after + label::after {
     top: -29px;
     left: -466px;
+  }
+
+  @media (min-resolution: 1.5dppx), (min-resolution: 144dpi) {
+    .example__slider-item--before:checked + label::before {
+      background: url("../img/before-desktop@2x.png") no-repeat;
+    }
+
+    .example__slider-item--after:checked + label::before {
+      background: url("../img/after-desktop@2x.png") no-repeat;
+    }
   }
 }
