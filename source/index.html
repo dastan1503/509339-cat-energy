@@ -5,6 +5,7 @@
     <title>HTML Academy: Кэт энерджи</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/style-min.css">
+    <link rel="preload" href="/fonts/oswaldregular.woff2" as="font">
   </head>
   <body>
     <header class="page-header">
@@ -77,12 +78,14 @@
           <h2 class="example__title">Живой пример</h2>
           <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
           <div class="example__facts">
-            <p class="example__fact">5 кг
-              <span class="example__fact-text">снижение веса</span>
-            </p>
-            <p class="example__fact">60 дней
-              <span class="example__fact-text">затрачено времени</span>
-            </p>
+            <div class="example__fact">
+              <p class="example__fact-text">5 кг</p>
+              <p class="example__fact-info">снижение веса</p>
+            </div>
+            <div class="example__fact">
+              <p class="example__fact-text">60 дней</p>
+              <p class="example__fact-info">затрачено времени</p>
+            </div>
           </div>
           <p class="example__cost-text">Затраты на питание: <span>15 000 руб.</span></p>
         </div>
